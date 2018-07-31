@@ -35,7 +35,7 @@ client.on("ready", () => {
 
   setInterval(function() {
     let games = [`over ${client.guilds.size} servers`, `over ${client.users.size} users`, `over my update v1.1`];
-    let status = games[Math.floor(MAth.random()*games.length)];
+    let status = games[Math.floor(Math.random()*games.length)];
     client.user.setActivity(status, { type: 'WATCHING' });
   }, 15000)
 
