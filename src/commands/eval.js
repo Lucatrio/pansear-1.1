@@ -19,8 +19,8 @@ module.exports.run = async (client, message, args) => {
           let embed = new Discord.RichEmbed()
             .setAuthor(` | ${client.user.username}`, client.user.displayAvatarURL)
             .setColor("36393F")
-            .addField(`📢 Input`, code)
-            .addField(`📢 Output`, clean(evaled))
+            .addField(`📢 Input`, '`' + code + '`')
+            .addField(`📢 Output`, '`' + clean(evaled) + '`')
             .setFooter(`${message.author.username} issued this command`);
           message.channel.send(embed);
         } catch (err) {
