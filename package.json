@@ -17,6 +17,7 @@
     "ms": "^2.1.1",
     "node-pokedex": "^1.0.3",
     "pokedex": "^1.0.0",
-    "pokemon-gif": "^1.0.13"
+    "pokemon-gif": "^1.0.13",
+    "dblapi.js": "^2.2.0"
   }
 }
