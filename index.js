@@ -5,6 +5,9 @@ const prefix = '>.';
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL, client);
 
+dbl.on("posted", () => {
+  console.log(`Posted ${client.guilds.size} servers to the DBL api!`)
+});
 fs.readdir("./src/commands/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
