@@ -2,7 +2,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
 const prefix = '>.';
-
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBL, client);
 
 fs.readdir("./src/commands/", (err, files) => {
   if (err) return console.error(err);
