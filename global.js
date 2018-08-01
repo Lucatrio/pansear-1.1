@@ -1,4 +1,4 @@
-const Discord = require('disscord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const log = client.channels.get('472911334330335242');
 
@@ -15,7 +15,7 @@ client.on("guildRemove", (guild) => {
   let embed = new Discord.RichEmbed()
     .setColor('36393F')
     .setDescription(`I have been removed on ${message.guild.name} (${message.guild.id})`)
-    .setFooter(`Left guild @ ${date}`);
+    .setFooter(`Left guild`);
   log.send(embed);
 });
 });
